@@ -1,0 +1,52 @@
+@import "nib"
+@import "vars"
+@import "mixins"
+
+*
+  box-sizing border-box
+
+html
+body
+  height 100%
+
+body
+  display: flex;
+  flex-direction: column;
+  position: relative
+  height: 100%;
+  margin 0
+  min-width: 320px
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color text-color
+  overflow-x: hidden
+  overflow-y auto
+  font-smoothing antialiased
+  scroll-behavior smooth
+  background-color white
+  p
+    margin-bottom: 16px;
+    margin-top: 0;
+
+.content
+  flex: 1 0 auto;
+
+.footer
+  flex-shrink: 0;
+
+img
+  max-width 100%
+  height: auto
+
+strong
+  font-weight bold
+
+a
+  color accent-color
+  text-decoration: none
+  transition color .3s ease-in-out
+  &:hover
+    text-decoration underline

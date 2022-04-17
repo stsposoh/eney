@@ -1,0 +1,18 @@
+@import "nib"
+@import "vars"
+@import "mixins"
+
+*::placeholder { color: dark-grey; }
+*::-webkit-input-placeholder { color: dark-grey; }
+*:-moz-placeholder { color: dark-grey; }
+*::-moz-placeholder { color: dark-grey; }
+*:-ms-input-placeholder { color: dark-grey; }
+
+input[type="text"]
+input[type="tel"]
+input[type="email"]
+input[type="number"]
+input[type="password"]
+  -webkit-appearance: none;
+  border-right: 0;
+  appearance: none;
